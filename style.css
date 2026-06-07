@@ -170,61 +170,6 @@ a {
     font-size: 0.85rem;
 }
 
-/* --- Badges --- */
-.badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: var(--transition-fast);
-}
-
-.badge::before {
-    content: '';
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-.badge.checking {
-    background-color: rgba(255, 255, 255, 0.08);
-    color: var(--text-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-}
-.badge.checking::before {
-    background-color: var(--text-secondary);
-    animation: pulse 1.5s infinite alternate;
-}
-
-.badge.open {
-    background-color: rgba(46, 213, 115, 0.12);
-    color: #2ed573;
-    border: 1px solid rgba(46, 213, 115, 0.25);
-}
-.badge.open::before {
-    background-color: #2ed573;
-    box-shadow: 0 0 8px #2ed573;
-}
-
-.badge.closed {
-    background-color: rgba(255, 71, 87, 0.12);
-    color: #ff4757;
-    border: 1px solid rgba(255, 71, 87, 0.25);
-}
-.badge.closed::before {
-    background-color: #ff4757;
-}
-
-@keyframes pulse {
-    0% { opacity: 0.4; }
-    100% { opacity: 1; }
-}
-
 /* --- Header & Navigation --- */
 .header {
     position: fixed;
@@ -329,11 +274,6 @@ a {
     
     .navbar.active {
         left: 0;
-    }
-    
-    .status-indicator {
-        margin-right: 1.5rem;
-        margin-left: auto;
     }
 }
 
